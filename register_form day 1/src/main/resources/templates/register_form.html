@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http:www.thymeLeaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Details</title>
+</head>
+<body bgcolor="orange">
+
+
+
+<div align="center">
+
+<h1>Displaying details</h1>
+<form th:action="@{'/register'}" method="post" th:object="${user}">
+
+<label>Enter full name : </label>
+<input type="text" th:field="*{name}"/>
+<br><br>
+<label>Enter email : </label>
+<input type="text" th:field="*{email}"/>
+
+<br><br>
+<label>Enter Password : </label>
+<input type="password" th:field="*{pass_word}"/>
+
+<br><br>
+
+<label>Enter Profession : </label>
+<input type="text" th:field="*{profession}"/>
+
+<br><br>
+<label>Married :</label>
+<input type="checkbox" th:field="*{married}"/>
+
+<br><br>
+<label>Enter gender</label>
+Male:
+<input type="radio" th:field="*{gender}" value="Male"/>
+Female:
+<input type="radio" th:field="*{gender}" value="female"/>
+
+<br><br>
+<label>Enter Gender : </label>
+<input type="text" th:field="*{gender}"/>
+
+<br><br>
+<label>Enter Year of study : </label>
+<input type="text" th:field="*{year}"/>
+
+<br><br>
+<label>Enter comment : </label>
+<input type="text" th:field="*{comment}"/>
+
+<br><br>
+
+
+
+<button type="submit">Register</button>
+</form>
+
+</div>
+
+</body>
+</html>
+
+
+
